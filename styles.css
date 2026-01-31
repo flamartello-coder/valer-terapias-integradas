@@ -66,15 +66,13 @@ body {
 }
 
 .atend {
-    width: 500px;    /* largura */
+    width: 100%;
+    max-width: 420px;
     border-radius: 15px;
-    /* bordas arredondadas */
     object-fit: cover;
-    /* cobre todo o espaço */
-    margin-left: 50px;
-    /* espaçamento esquerdo */
+    margin: 20px auto 0;
+    display: block;
     
-
 }
 
 .btn-hero {
@@ -99,7 +97,7 @@ body {
 }
 
 .hero-text {
-    max-width: 700px;
+    
     text-align: left;
     flex: 1;
 }
@@ -260,26 +258,64 @@ body {
 
 /* RESPONSIVO */
 @media (max-width: 768px) {
+
+    /* HEADER */
     .header {
         flex-direction: column;
+        text-align: center;
+        padding: 20px;
     }
 
     .menu {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
         margin-top: 15px;
     }
 
+    .menu a {
+        margin-left: 0;
+    }
+
+    /* HERO */
     .hero {
         flex-direction: column;
-        justify-content: center;
         text-align: center;
+        padding: 30px 20px;
     }
 
     .hero-text {
+        max-width: 100%;
         text-align: center;
-        flex: none;
     }
 
     .hero h1 {
         font-size: 2rem;
+    }
+
+    /* SOBRE */
+    .sobre {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .val {
+        height: auto;
+        max-width: 260px;
+        margin-top: 20px;
+    }
+
+    /* CARDS */
+    .cards,
+    .caixa1 {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .caixa {
+        width: 100%;
+        max-width: 320px;
     }
 }
