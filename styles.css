@@ -28,6 +28,10 @@ body {
     /* espacamento interno */
     background: #f5ecfa;
     /* cor de fundo */
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
 }
 
 .logo {
